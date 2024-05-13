@@ -1,21 +1,80 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>What is this?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 5px;
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: #333;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        code,
+        pre {
+            background-color: #f8f9fa;
+            padding: 0.5em;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+    </style>
 </head>
 
 <body>
     <h1>What is this?</h1>
-    <p>This is a public api using github pages for the Final Higher Education Project of Multiplatform Application Development. It consist of a series of motivational phrases to help the people using the app, <a href="https://addiction-helper.vercel.app/">which is an addiction manager</a>.</p>
+    <p>This is a public API using GitHub Pages for the Final Higher Education Project of Multiplatform Application Development. It consists of a series of motivational phrases to help the people using the app, <a href="https://addiction-helper.vercel.app/">which is an addiction manager</a>.</p>
 
     <h2>Can I contribute?</h2>
-    <p>Absolutely! feel free to add your favourite phrases whether they are religoius or not. Use the religion camp on the json to clarify it. 1 = catholic, 0 = non religious.</p>
+    <p>Absolutely! Feel free to add your favorite phrases whether they are religious or not. Use the religion camp on the JSON to clarify it. 1 = Catholic, 0 = non-religious. You can also add new translations or fix possible errors on the current ones.</p>
 
     <h2>Can I use this for my project?</h2>
-    <p>Yes you can, you can also fork this and use it howerer you want.</p>
+    <p>Yes, you can. You can also fork this and use it however you want.</p>
+
+    <h2>How can I use this API?</h2>
+    <p>Simply make an HTTP request to:</p>
+    <code>https://gomezmig03.github.io/MotivationalAPI/[language].json</code>
+
+    <p>The current language codes are the following:</p>
+    <ul>
+        <li>English = en</li>
+        <li>Spanish = sp</li>
+        <li>French = fr</li>
+    </ul>
+
+    <h3>Example of an HTTP request to get a random phrase and author in JavaScript</h3>
+    <pre><code>fetch('https://gomezmig03.github.io/MotivationalAPI/en.json')
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Unable to retrieve data from the server.');
+            }
+            return response.json();
+        })
+        .then(data => {
+            const randomIndex = Math.floor(Math.random() * data.length);
+            const phrase = data[randomIndex].phrase;
+            const author = data[randomIndex].author;
+            console.log(('quote').textContent = `"${phrase}" - ${author}`);
+        })
+        .catch(error => {
+            console.error('Error:', error);
+        });</code></pre>
 </body>
 
 </html>
