@@ -1,8 +1,8 @@
-    <title>What is this?</title>
+    <title>MotivationalAPI</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            line-height: 1.6;
+            line-height: 1.5;
             margin: 0;
             padding: 5px;
         }
@@ -33,6 +33,19 @@
             padding: 0.5em;
             border-radius: 5px;
             overflow-x: auto;
+            width: 50%;
+            border-radius: 5px;
+        }
+        article{
+            display: flex;
+            flex-direction: row;
+            height: 3.5vh;
+            align-items: center;
+            justify-content: flex-start;
+            margin: 5px;
+        }
+        select, button, #test-text{
+            margin: 5px;
         }
     </style>
 </head>
@@ -57,7 +70,7 @@
         <li>Spanish = sp</li>
         <li>French = fr</li>
     </ul>
-
+    <section>
     <h3>Example of an HTTP request to get a random phrase and author in JavaScript</h3>
     <pre><code>fetch('https://gomezmig03.github.io/MotivationalAPI/en.json')
         .then(response => {
@@ -74,7 +87,46 @@
         })
         .catch(error => {
             console.error('Error:', error);
-        });</code></pre>
+        });</code></pre> 
+        <form>
+            <article>
+                <select name="lang" id="lang">
+                    <option value="en" selected>English</option>
+                    <option value="es">Spanish</option>
+                    <option value="fr">French</option>
+                  </select>
+                <button id="button"> Test </button> 
+                <p id="test-text"> </p>
+            </article>
+        </form>
+    </section>
 </body>
+<script>
+    const but = document.getElementById("button")
+    const text = document.getElementById("test-text")
+    const select = document.getElementById("lang")
 
+    but.addEventListener("click", ()=> {
+        event.preventDefault()
+        let language = select.value
+
+        fetch(`https://gomezmig03.github.io/MotivationalAPI/${language}.json`)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Unable to retrieve data from the server.')
+            }
+            return response.json()
+        })
+        .then(data => {
+            const randomIndex = Math.floor(Math.random() * data.length)
+            const phrase = data[randomIndex].phrase
+            const author = data[randomIndex].author
+            console.log(`"${phrase}" - ${author}`)
+            text.innerHTML = `"${phrase}" - ${author}`
+        })
+        .catch(error => {
+            console.error('Error:', error);
+        });
+    })
+</script>
 </html>
