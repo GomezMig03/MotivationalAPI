@@ -4,7 +4,7 @@ This is a public api using github pages for the Final Higher Education Project o
 
 # Can I contribute?
 
-Absolutely! feel free to add your favourite phrases whether they are religoius or not. Use the religion camp on the json to clarify it. 1 = catholic, 0 = non religious.
+Absolutely! feel free to add your favourite phrases whether they are religious or not. Use the religion camp on the json to clarify it. 1 = catholic, 0 = non religious.
 
 # Can I use this for my project?
 
