@@ -6,6 +6,7 @@ This is a public api using github pages for the Final Higher Education Project o
 
 Absolutely! feel free to add your favourite phrases whether they are religoius or not. Use the religion camp on the json to clarify it. 1 = catholic, 0 = non religious.
 You can also add new translations or fixing possible errors on the current ones.
+We are not currently accepting web contributions. There are plans to migrate the documentation to Vue, which may affect the process in the future.
 
 # Can I use this for my project?
 
