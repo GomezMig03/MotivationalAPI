@@ -22,6 +22,7 @@ The current languages codes are the following:
  * English = en
  * Spanish = es
  * French = fr
+ * Japanese = jp
 
 ## Example of an HTTP request to get a random phrase and author on javascript
 ```
