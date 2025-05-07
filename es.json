@@ -18,4 +18,22 @@
 {"id":18,"phrase":"Cada amanecer es una bendición, una oportunidad para comenzar de nuevo y hacer lo mejor posible.","author":"Keanu Reeves","religion":0},
 {"id":19,"phrase":"No estoy diseñado para ser segundo o tercero, estoy diseñado para ganar.","author":"Ayrton Senna ","religion":0},
 {"id":20,"phrase": "No se preocupen por nada; en cambio, oren por todo. Díganle a Dios lo que necesitan y agradézcanle por todo lo que él ha hecho.","author":"Filipenses 4:6","religion":1},
-{"id":21,"phrase":"El Señor asegura tus pasos y se complace en tus caminos, si tropiezas, no caerás, porque Él sostiene tu mano", "author":"Salmos 37:22-23"}]
+{"id":21,"phrase":"El Señor asegura tus pasos y se complace en tus caminos, si tropiezas, no caerás, porque Él sostiene tu mano", "author":"Salmos 37:22-23", "religion":1},
+{"id":22,"phrase":"La ocasión hay que crearla, no esperar a que llegue","author":"Francis Bacon", "religion":0},
+{"id":23, "phrase":"El verdadero emprendedor no es un soñador, es un hacedor.", "author":"Nolan Bushnell","religion":0},
+{"id":24, "phrase":"El germen de todo plan y de toda empresa es una idea; no capital ni trabajo, sino una idea.","author":"Henry Ford", "religion":0},
+{"id":25, "phrase":"Cada logro —sea grande o pequeño— tiene etapas de esclavitud y de triunfo; un comienzo, una lucha, una victoria.", "author":"Mahatma Gandhi","religion":0},
+{ "id": 26, "phrase": "Si no puedes hacer grandes cosas, haz pequeñas cosas a lo grande.", "author": "Napoleon Hill", "religion": 0 },
+{ "id": 27, "phrase": "No existe en el mundo nada más poderoso que una idea a la que le ha llegado su tiempo.", "author": "Victor Hugo", "religion": 0 },
+{ "id": 28, "phrase": "Algunas personas quieren que ocurra algo; otras sueñan con que pasará por sí solo; otras hacen que suceda.", "author": "Michael Jordan", "religion": 0 },
+{ "id": 29, "phrase": "Para llegar lejos en este mundo, hay que hacer como si ya se hubiera llegado lejos.", "author": "François de La Rochefoucauld", "religion": 0 },
+{ "id": 30, "phrase": "Si tus aspiraciones no son mayores que tus recursos, no eres un emprendedor.", "author": "C. K. Prahalad", "religion": 0 },
+{ "id": 31, "phrase": "La pregunta no es quién va a dejarme; la pregunta es quién va a pararme.", "author": "Ayn Rand", "religion": 0 },
+{ "id": 32, "phrase": "Muchos de nuestros sueños parecen al principio imposibles, luego pueden parecer improbables y, por último, cuando nos comprometemos con ellos firmemente, se vuelven inevitables.", "author": "Christopher Reeve", "religion": 0 },
+{ "id": 33, "phrase": "Es imposible ser sobresaliente o muy original, ser distinto, si te comportas como todos y no rompes algunas normas.", "author": "Arnold Schwarzenegger", "religion": 0 },
+{ "id": 34, "phrase": "Muchas cosas no nos atrevemos a emprenderlas no porque sean difíciles en sí, sino que son difíciles porque no nos atrevemos a emprenderlas.", "author": "Lucio Anneo Séneca", "religion": 0 },
+{ "id": 35, "phrase": "Dile a todos lo que quieres hacer y alguien querrá ayudarte a hacerlo.", "author": "William Clement Stone", "religion": 0 },
+{ "id": 36, "phrase": "Si quieres triunfar en el mundo, no necesitas ser mucho más listo que la gente, sólo ir un día por delante.", "author": "Leo Szilard", "religion": 0 },
+{ "id": 37, "phrase": "Las grandes ideas no sólo necesitan alas, sino también tren de aterrizaje.", "author": "The New York Times", "religion": 0 },
+{ "id": 38, "phrase": "La dificultad no consiste en tener una idea, sino en recoger todo su fruto.", "author": "Condesa Tolstói", "religion": 0 }
+]
