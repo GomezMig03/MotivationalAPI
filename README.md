@@ -1,4 +1,5 @@
-> [!IMPORTANT] Github pages deprecation notice
+> [!IMPORTANT]
+> # Github pages deprecation notice
 > The Github pages API we previously used will now be deprecated and we will use jsDelivr instead, please read the documentation to know how to make the change. The Github pages API will remain usable for some time but eventually will be unusable.
 
 # What is this?
