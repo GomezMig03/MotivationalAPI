@@ -1,24 +1,30 @@
 <!DOCTYPE html>
 <html>
-    <head>
+
+<head>
     <title>MotivationalAPI</title>
-        <link rel="stylesheet" href="https://matcha.mizu.sh/matcha.css">
+    <link rel="stylesheet" href="https://matcha.mizu.sh/matcha.css">
 </head>
 
 <body>
     <h1>What is this?</h1>
-    <p>This is a public API using GitHub Pages for the Final Higher Education Project of Multiplatform Application Development. It consists of a series of motivational phrases to help the people using the app, <a href="https://addiction-helper.vercel.app/">which is an addiction manager</a>.</p>
+    <p>This is a public API using <a href="https://www.jsdelivr.com/"> jsDelivr </a> for the Final Higher Education
+        Project of Multiplatform Application Development. It consists of a series of motivational phrases to help the
+        people using the app, <a href="https://addiction-helper.vercel.app/">which is an addiction manager</a>.</p>
 
     <h2>Can I contribute?</h2>
-    <p>Absolutely! Feel free to add your favorite phrases whether they are religious or not. Use the religion camp on the JSON to clarify it. 1 = Catholic, 0 = non-religious. You can also add new translations or fix possible errors on the current ones.</p>
-    <p>We are not currently accepting web contributions. There are plans to migrate the documentation to Vue, which may affect the process in the future.</p>
-    
+    <p>Absolutely! Feel free to add your favorite phrases whether they are religious or not. Use the religion camp on
+        the JSON to clarify it. 1 = Catholic, 0 = non-religious. You can also add new translations or fix possible
+        errors on the current ones.</p>
+    <p>We are not currently accepting web contributions. There are plans to migrate the documentation to Vue, which may
+        affect the process in the future.</p>
+
     <h2>Can I use this for my project?</h2>
     <p>Yes, you can. You can also fork this and use it however you want.</p>
 
     <h2>How can I use this API?</h2>
     <p>Simply make an HTTP request to:</p>
-    <code>https://gomezmig03.github.io/MotivationalAPI/[language].json</code>
+    <code>https://cdn.jsdelivr.net/gh/gomezmig03/MotivationalAPI/[language].json</code>
 
     <p>The current language codes are the following:</p>
     <ul>
@@ -28,23 +34,23 @@
         <li>Japanese = ja</li>
     </ul>
     <section>
-    <h3>Example of an HTTP request to get a random phrase and author in JavaScript</h3>
-    <pre><code>fetch('https://gomezmig03.github.io/MotivationalAPI/en.json')
-        .then(response => {
-            if (!response.ok) {
+        <h3>Example of an HTTP request to get a random phrase and author in JavaScript</h3>
+        <pre><code>fetch('https://cdn.jsdelivr.net/gh/gomezmig03/MotivationalAPI/en.json')
+                .then(response => {
+                if (!response.ok) {
                 throw new Error('Unable to retrieve data from the server.');
-            }
-            return response.json();
-        })
-        .then(data => {
-            const randomIndex = Math.floor(Math.random() * data.length);
-            const phrase = data[randomIndex].phrase;
-            const author = data[randomIndex].author;
-            console.log(('quote').textContent = `"${phrase}" - ${author}`);
-        })
-        .catch(error => {
-            console.error('Error:', error);
-        });</code></pre> 
+                }
+                return response.json();
+                })
+                .then(data => {
+                const randomIndex = Math.floor(Math.random() * data.length);
+                const phrase = data[randomIndex].phrase;
+                const author = data[randomIndex].author;
+                console.log(('quote').textContent = `"${phrase}" - ${author}`);
+                })
+                .catch(error => {
+                console.error('Error:', error);
+                });</code></pre>
         <form>
             <article>
                 <select name="lang" id="lang">
@@ -52,8 +58,8 @@
                     <option value="es">Spanish</option>
                     <option value="fr">French</option>
                     <option value="ja">Japanese</option>
-                  </select>
-                <button id="button"> Test </button> 
+                </select>
+                <button id="button"> Test </button>
                 <p id="test-text"> </p>
             </article>
         </form>
@@ -64,27 +70,28 @@
     const text = document.getElementById("test-text")
     const select = document.getElementById("lang")
 
-    but.addEventListener("click", ()=> {
+    but.addEventListener("click", () => {
         event.preventDefault()
         let language = select.value
 
-        fetch(`https://gomezmig03.github.io/MotivationalAPI/${language}.json`)
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('Unable to retrieve data from the server.')
-            }
-            return response.json()
-        })
-        .then(data => {
-            const randomIndex = Math.floor(Math.random() * data.length)
-            const phrase = data[randomIndex].phrase
-            const author = data[randomIndex].author
-            console.log(`"${phrase}" - ${author}`)
-            text.innerHTML = `"${phrase}" - ${author}`
-        })
-        .catch(error => {
-            console.error('Error:', error);
-        });
+        fetch(`https://cdn.jsdelivr.net/gh/gomezmig03/MotivationalAPI/${language}.json`)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Unable to retrieve data from the server.')
+                }
+                return response.json()
+            })
+            .then(data => {
+                const randomIndex = Math.floor(Math.random() * data.length)
+                const phrase = data[randomIndex].phrase
+                const author = data[randomIndex].author
+                console.log(`"${phrase}" - ${author}`)
+                text.innerHTML = `"${phrase}" - ${author}`
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
     })
 </script>
+
 </html>

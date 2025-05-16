@@ -1,6 +1,9 @@
+> [!IMPORTANT] Github pages deprecation notice
+> The Github pages API we previously used will now be deprecated and we will use jsDelivr instead, please read the documentation to know how to make the change. The Github pages API will remain usable for some time but eventually will be unusable.
+
 # What is this?
 
-This is a public api using github pages for the Final Higher Education Project of Multiplatform Application Development. It consist of a series of motivational phrases to help the people using the app, [which is an addiction manager](https://addiction-helper.vercel.app/). 
+This is a public api using [jsDelivr](https://www.jsdelivr.com/), at first thought as a part of the Final Higher Education Project of Multiplatform Application Development. It consist of a series of motivational phrases to help the people using the app, [which is an addiction manager](https://addiction-helper.vercel.app/). 
 
 # Can I contribute?
 
@@ -16,7 +19,7 @@ Yes you can, you can also fork this and use it however you want.
 # How can I use this API
 
 Simply make a HTTP request to
-```https://gomezmig03.github.io/MotivationalAPI/[language].json```
+```https://cdn.jsdelivr.net/gh/GomezMig03/MotivationalAPI/[language].json```
 
 The current languages codes are the following:
  * English = en
@@ -26,7 +29,7 @@ The current languages codes are the following:
 
 ## Example of an HTTP request to get a random phrase and author on javascript
 ```
-fetch('https://gomezmig03.github.io/MotivationalAPI/en.json')
+fetch('https://cdn.jsdelivr.net/gh/gomezmig03/MotivationalAPI/en.json')
         .then(response => {
           if (!response.ok) {
             throw new Error('Unable to retrieve data from the server.');
