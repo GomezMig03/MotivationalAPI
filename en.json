@@ -18,4 +18,7 @@
 {"id":18,"phrase":"Every sunrise is a blessing, an opportunity to start anew and do your best.","author":"Keanu Reeves","religion":0},
 {"id":19,"phrase":"I'm not designed to be second or third, I'm designed to win.","author":"Ayrton Senna","religion":0},
 {"id":20,"phrase": "Don't worry about anything; instead, pray about everything. Tell God what you need and thank Him for all He has done.","author":"Philippians 4:6","religion":1},
-{"id":21,"phrase":"Our steps are made firm by the Lord, He delights in our ways; though we stumble, we shall not fall, for He holds us by the hand.", "author":"Psalm 37:22-23"}]
+{"id":21,"phrase":"Our steps are made firm by the Lord, He delights in our ways; though we stumble, we shall not fall, for He holds us by the hand.", "author":"Psalm 37:22-23"},
+{"id":22,"phrase":"One must create the occasion, not wait for it to arrive.","author":"Francis Bacon", "religion":0},
+{"id":23, "phrase":"Every achievement—whether big or small—has stages of servitude and triumph; a beginning, a struggle, a victory.", "author":"Mahatma Gandhi","religion":0},
+{ "id": 24, "phrase": "Some people want it to happen, some wish it would happen, others make it happen.", "author": "Michael Jordan", "religion": 0 }]
